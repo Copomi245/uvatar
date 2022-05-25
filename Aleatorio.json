@@ -1,0 +1,38 @@
+{
+    "nombre": "Aleatorio",
+    "orejaI": {
+        "width": "108px",
+        "heigth": "301px",
+        "left": "",
+        "top": "",
+        "url": "https://i.ibb.co/n61GGk7/left-ear1.png"
+    },
+    "orejaD": {
+        "width": "81px",
+        "heigth": "198px",
+        "left": "",
+        "top": "",
+        "url": "https://i.ibb.co/Sn3Tzf0/Right-ear0.png"
+    },
+    "ojos": {
+        "width": "421px",
+        "heigth": "117px",
+        "left": "",
+        "top": "",
+        "url": "https://i.ibb.co/YPn2LMg/eyes0.png"
+    },
+    "boca": {
+        "width": "114px",
+        "heigth": "54px",
+        "left": "",
+        "top": "",
+        "url": "https://i.ibb.co/72ghbRW/mouth3.png"
+    },
+    "nariz": {
+        "width": "140px",
+        "heigth": "256px",
+        "left": "",
+        "top": "",
+        "url": "https://i.ibb.co/Nxty8qB/nose0.png"
+    }
+}
