@@ -27,37 +27,37 @@ const app = new Vue({
 
 
         
-        fetch('http://localhost:8080/ojos')
+        fetch('http://::8080/ojos')
         .then(response => response.json())
         .then(json => {
             this.ojos = json.Ojos
         }),
 
-        fetch('http://localhost:8080/bocas')
+        fetch('http://::8080/bocas')
         .then(response => response.json())
         .then(json => {
             this.bocas = json.Bocas
         }),
 
-        fetch('http://localhost:8080/narices')
+        fetch('http://::8080/narices')
         .then(response => response.json())
         .then(json => {
             this.narices = json.Narices
         }),
 
-        fetch('http://localhost:8080/orejasI')
+        fetch('http://::8080/orejasI')
         .then(response => response.json())
         .then(json => {
             this.orejasI = json.Orejas
         }),
 
-        fetch('http://localhost:8080/orejasD')
+        fetch('http://::8080/orejasD')
         .then(response => response.json())
         .then(json => {
             this.orejasD = json.Orejas
         }),
 
-        fetch('http://localhost:8080/accesorios')
+        fetch('http://::8080/accesorios')
         .then(response => response.json())
         .then(json => {
             this.accesorios = json.Accesorios
