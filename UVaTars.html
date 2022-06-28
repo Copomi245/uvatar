@@ -1,0 +1,138 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajando con UVaTars</title>
+        <link rel="stylesheet" href="uvatar_estilo.scss">
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+        
+    </head>
+    <body>
+        <div id="app">
+            <h1><strong>Bienvenido a UVaTars</strong>
+                <a href="https://www.uva.es/export/sites/uva/">
+                    <p> 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Logotipo_de_la_Universidad_de_Valladolid.svg/1200px-Logotipo_de_la_Universidad_de_Valladolid.svg.png"  width="65" hegiht="65">
+                    </p>
+                    
+                </a>
+            </h1>
+            
+            <h2>En esta web podrás crear caras más feas que la tuya
+                y que la de tu padre calvo. Feliz día. 
+            
+            </h2>
+            <div class="container">
+                        <div class="left">
+                            <div>
+                                <h3>UVaTar</h3>
+                                 
+                                                                 
+                                    <img class="yoda" src="https://i.ibb.co/8MHXt1J/base.png" alt="El yoda">
+
+                                    <img :src="boca_actual" class="boca_ubicacion">
+                                    <img :src="orejaD_actual" class="oreja_der_ubicacion">
+                                    <img :src="orejaI_actual" class="oreja_izda_ubicacion">
+                                    <img :src="nariz_actual" class="nariz_ubicacion">
+                                    <img :src="ojos_actual"  class="ojos_ubicacion">
+                                    <img :src="accesorio_cabeza" alt="" class="accesorio">
+
+                                    <br><br><br><br>
+                                    <button type="button" class="boton" @click="uvatarAleatorio()">Generar aleatorio</button>
+                                    <h4>Introduzca sus imágenes
+
+                                        <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                                            <input type="file" name="imagen" />
+                                            <input type="submit" name="subir-imagen" value="Enviar imagen" />
+                                        </form>
+                                    </h4>
+
+                                    
+                                    
+                                
+                            </div>
+
+
+                        </div>
+                        <div class="right">
+                            <div>
+                                <h4>Crea tu propio Monstruo.SA. by PIXAR</h4>
+
+                                <h5 class="titulillo">Ojos</h5>
+
+                                <ul>
+                                    <span v-for="ojo in ojos">
+                                        <div>
+                                            <a href="#" @click="cambiarOjos(ojo)"><img :src="ojo" alt="" class="ojos"></a>
+                                        </div></span>
+                                </ul>
+                                {{ojos_actual}}
+
+                                {{ojos}}
+                                
+                                <h5 class="titulillo">Orejas izquierdas </h5>
+
+                                <ul>
+                                    <span v-for="oreja in orejasI"> 
+                                            <a href="#" @click="cambiarOrejaI(oreja)"><img :src="oreja" alt="" class="orejas"></a>
+                                    </span>
+                                </ul>
+                                {{orejaI_actual}}
+                                {{orejasI}}
+
+                                <h5 class="titulillo">Orejas derechas </h5>
+
+                                <ul>
+                                    <span v-for="oreja in orejasD"> 
+                                            <a href="#" @click="cambiarOrejaD(oreja)"><img :src="oreja" alt="" class="orejas"></a>
+                                    </span>
+                                </ul>
+                                {{orejasD}}
+                                
+                                
+                                
+                                <h5 class="titulillo">Nariz</h5>
+
+                                <ul>
+                                    <span v-for="nariz in narices">
+                                            <a href="#" @click="cambiarNariz(nariz)"><img :src="nariz" class="narices"></a>
+                                        </span>
+                                </ul>
+                                {{narices}}
+                                
+                                <h5 class="titulillo">Boca</h5>
+
+                                <ul>
+                                    <span v-for="boca in bocas">
+                                        <a href="#" @click="cambiarBoca(boca)"><img :src="boca" alt="" class="bocas"></a>
+                                    </span>
+                                </ul>
+                                {{bocas}}
+
+                                <h5 class="titulillo">Accesorios</h5>
+
+                                <ul>
+                                    <span v-for="accesorio in accesorios">
+                                        <a href="#" @click="equiparAccesorio(accesorio)"><img :src="accesorio" alt="" class="accesorios"></a></span>
+                                </ul>
+                                {{accesorios}}
+
+
+                                
+                            </div>
+
+
+                        </div>
+            </div>
+            
+            
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="./vue.js"></script>
+    </body>
+    </html>

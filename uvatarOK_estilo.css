@@ -1,0 +1,92 @@
+body{
+    background-color: salmon;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+h1{
+    
+    font-size: 150px;
+    margin-bottom: 50px;
+
+}
+.titulillo{
+
+    margin-bottom: 50px;
+    font-size: 50px;
+    background-color: rgb(194, 93, 93);
+    box-shadow: 14px;
+    border-radius: 15px;
+    
+
+}
+.opciones{
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 2px;
+}
+.nariz_ubicacion{
+    position: absolute;
+    height: 120px;
+    left: 500px;
+    top: 460px;
+}
+.oreja_izda_ubicacion{
+    position: absolute;
+    height: 160px;
+    top: 455px;
+    left: 300px;
+}
+.oreja_der_ubicacion{
+    position: absolute;
+    height: 160px;
+    top: 455px;
+    left: 710px;
+}
+.boca_ubicacion{
+    position: absolute;
+    height:55px;
+    top: 625px;
+    width: 180px;
+    left: 440px;
+}
+.ojos_ubicacion{
+    top: 400px;
+    left: 425px;
+    margin-top: 10;
+    height: 80px;
+    width: 210px;
+    position: absolute;
+}
+.accesorio_ubicacion{
+    top: -30px;
+    left: 220px;
+    margin-top: 10;
+    width: 580px;
+    position: absolute;
+
+
+}
+.ojos{
+    width: 250px;
+    border: 1px solid #000;
+}
+.orejas{
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.narices{
+    height: 200px;
+    border: 1px solid #000;
+}
+.bocas{
+    width: 300px;
+    border: 1px solid #000;
+}
+.accesorios{
+    height: 200px;
+    border: 1px solid #000;
+}

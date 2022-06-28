@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+h2{
+    margin-left: 50;
+}
+h1{
+    margin-top: 50;
+    margin-left: 50;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darksalmon;
+    background-size: auto;
+    height: 150vh;
+}
+.left{
+    background-color: linear-gradient(white, salmon);
+    font-size: 30px;
+    display: flex;
+    
+    
+}
+h3{
+    margin-left: 100;
+}
+h4{
+    margin-left: 100;
+}
+.right{
+    font-size: 30px;
+    display: flex;
+}
+.boton{
+    margin-left: 100;
+    border: 1px solid #ab1e5d; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color:#ab1e5d; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    
+
+}
+.yoda{
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    padding-top: 40;
+    margin-left: 100;
+
+}
+.con_borde{
+    border: 1px solid #000;
+    height: 55px;
+
+}
+h1{
+    font-size: 25pt;
+}
+.nariz_ubicacion{
+    position: absolute;
+    height: 100px;
+    left: 250px;
+    top: 610px;
+}
+.oreja_izda_ubicacion{
+    position: absolute;
+    height: 120px;
+    top: 620px;
+    left: 85px;
+}
+.oreja_der_ubicacion{
+    position: absolute;
+    height: 120px;
+    top: 620px;
+    left: 400px;
+}
+.boca_ubicacion{
+    position: absolute;
+    height:55px;
+    top: 730px;
+    width: 180px;
+    left: 185px;
+}
+.ojos_ubicacion{
+    top: 400px;
+    left: 180px;
+    margin-top: 10;
+    height: 80px;
+    width: 200px;
+    position: absolute;
+}
+.ojos{
+    width: 250px;
+    border: 1px solid #000;
+}
+.orejas{
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.narices{
+    height: 200px;
+    border: 1px solid #000;
+}
+.bocas{
+    width: 300px;
+    border: 1px solid #000;
+}
+.accesorios{
+    height: 200px;
+    border: 1px solid #000;
+}
+.titulillo{
+
+}
