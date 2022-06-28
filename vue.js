@@ -25,7 +25,9 @@ const app = new Vue({
     created(){
 
 
-
+module.exports = {
+  runtimeCompiler: true
+}
         
         fetch('http://::8080/ojos')
         .then(response => response.json())
