@@ -45,7 +45,7 @@ const app = new Vue({
             this.narices = json.Narices
         }),
 
-        fetch('http://::8080/orejasI')
+        fetch('http://0.0.0.0:8080/orejasI')
         .then(response => response.json())
         .then(json => {
             this.orejasI = json.Orejas
