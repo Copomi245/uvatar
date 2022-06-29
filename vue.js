@@ -16,7 +16,7 @@ const app = new Vue({
         ojos:[],
         bocas:[],
         narices:[],
-        orejasI:["cagon"],
+        orejasI:[],
         orejasD:[],
         accesorios:[],
         variable:[],
@@ -27,37 +27,37 @@ const app = new Vue({
 
 
         
-        fetch('http://::8080/ojos')
+        fetch('http://localhost:8080/ojos')
         .then(response => response.json())
         .then(json => {
             this.ojos = json.Ojos
         }),
 
-        fetch('http://localhost/443/bocas')
+        fetch('http://localhost:8080/bocas')
         .then(response => response.json())
         .then(json => {
             this.bocas = json.Bocas
         }),
 
-        fetch('http://*:443/narices')
+        fetch('http://localhost:8080/narices')
         .then(response => response.json())
         .then(json => {
             this.narices = json.Narices
         }),
 
-        fetch('http://::443/orejasI')
+        fetch('http://localhost:8080/orejasI')
         .then(response => response.json())
         .then(json => {
             this.orejasI = json.Orejas
         }),
 
-        fetch('http://::8080/orejasD')
+        fetch('http://localhost:8080/orejasD')
         .then(response => response.json())
         .then(json => {
             this.orejasD = json.Orejas
         }),
 
-        fetch('http://::8080/accesorios')
+        fetch('http://localhost:8080/accesorios')
         .then(response => response.json())
         .then(json => {
             this.accesorios = json.Accesorios
@@ -125,4 +125,3 @@ const app = new Vue({
         
     }
 })
-
