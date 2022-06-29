@@ -33,13 +33,13 @@ const app = new Vue({
             this.ojos = json.Ojos
         }),
 
-        fetch('http://::8080/bocas')
+        fetch('http://localhost/8080/bocas')
         .then(response => response.json())
         .then(json => {
             this.bocas = json.Bocas
         }),
 
-        fetch('http://::8080/narices')
+        fetch('http://*:8080/narices')
         .then(response => response.json())
         .then(json => {
             this.narices = json.Narices
