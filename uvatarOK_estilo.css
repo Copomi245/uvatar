@@ -30,31 +30,31 @@ h1{
 .nariz_ubicacion{
     position: absolute;
     height: 120px;
-    left: 500px;
+    left: 420px;
     top: 460px;
 }
 .oreja_izda_ubicacion{
     position: absolute;
     height: 160px;
     top: 455px;
-    left: 300px;
+    left: 455px;
 }
 .oreja_der_ubicacion{
     position: absolute;
     height: 160px;
     top: 455px;
-    left: 710px;
+    left: 620px;
 }
 .boca_ubicacion{
     position: absolute;
     height:55px;
     top: 625px;
     width: 180px;
-    left: 440px;
+    left: 625px;
 }
 .ojos_ubicacion{
     top: 400px;
-    left: 425px;
+    left: 348px;
     margin-top: 10;
     height: 80px;
     width: 210px;
@@ -62,7 +62,7 @@ h1{
 }
 .accesorio_ubicacion{
     top: -30px;
-    left: 220px;
+    left: 170px;
     margin-top: 10;
     width: 580px;
     position: absolute;
