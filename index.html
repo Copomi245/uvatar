@@ -63,8 +63,7 @@
                                                 <a href="#" @click="cambiarOjos(ojo)"><img :src="ojo" alt="" class="ojos"></a>
                                             </div></span>
                                     </ul>
-                                    {{ojos_actual}}
-                                    {{ojos}}
+                                    
                         </div>
                         <div class="col">
                             <h5 class="titulillo">Nariz</h5>
@@ -74,7 +73,6 @@
                                                 <a href="#" @click="cambiarNariz(nariz)"><img :src="nariz" class="narices"></a>
                                             </span>
                                     </ul>
-                                    {{narices}}
 
                         </div>
                     </div>
@@ -88,8 +86,6 @@
                                         <a href="#" @click="cambiarOrejaI(oreja)"><img :src="oreja" alt="" class="orejas"></a>
                                 </span>
                             </ul>
-                                    {{orejaI_actual}}
-                                    {{orejasI}}
                             
                         </div>
                         <div class="col">
@@ -101,7 +97,6 @@
                                         <a href="#" @click="cambiarOrejaD(oreja)"><img :src="oreja" alt="" class="orejas"></a>
                                 </span>
                             </ul>
-                                    {{orejasD}}
                         </div>
                     </div>
                     <div class="row">
@@ -114,7 +109,6 @@
                                         <a href="#" @click="cambiarBoca(boca)"><img :src="boca" alt="" class="bocas"></a>
                                     </span>
                             </ul>
-                            {{bocas}}
 
                         </div>
                         <div class="col">
@@ -125,7 +119,6 @@
                                 <span v-for="accesorio in accesorios">
                                     <a href="#" @click="equiparAccesorio(accesorio)"><img :src="accesorio" alt="" class="accesorios"></a></span>
                             </ul>
-                            {{accesorios}}
                         </div>
 
                     </div>
