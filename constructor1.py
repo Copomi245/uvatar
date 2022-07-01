@@ -6,69 +6,6 @@ import json
 import random
 import glob
 from random import randint
-"""este es el q funcion"""
-
-def uvatarAleatorio():
-    aleatorio = {"nombre" : "Aleatorio"}
-
-    with open('./uvatar_recortes.json') as file:
-        data = json.load(file)
-        
-    #i = random.randint(0, data["caras"].__len__()-1)
-    #aleatorio["cara"] = data["caras"][i]
-    i = randint(0, data["left_ears"].__len__()-1)
-    aleatorio["orejaI"] = data["left_ears"][i]
-    i = randint(0, data["right_ears"].__len__()-1)
-    aleatorio["orejaD"] = data["right_ears"][i]
-    i = randint(0, data["eyes"].__len__()-1)
-    aleatorio["ojos"] = data["eyes"][i]
-    i = randint(0, data["mouths"].__len__()-1)
-    aleatorio["boca"] = data["mouths"][i]
-    i = randint(0, data["noses"].__len__()-1)
-    aleatorio["nariz"] = data["noses"][i]
-
-    with open('Aleatorio.json', 'w') as file:
-        json.dump(aleatorio, file, indent=4)
-    return aleatorio
-
-@get('/Aleatorio')
-def Aleatorio():
-    aleatorio = uvatarAleatorio()
-    return aleatorio
-
-
-
-
-
-@get('/Nombres')
-def Nombres():
-    nombres = {"Nombres" : []}
-
-    
-    with open('./pedrerol.json') as file:
-        data = json.load(file)
-        nombres["Nombres"].append(data["nombre"])
-    with open('./juanma.json') as file:
-        data = json.load(file)
-        nombres["Nombres"].append(data["nombre"])
-    with open('./dario.json') as file:
-        data = json.load(file)
-        nombres["Nombres"].append(data["nombre"])
-    return nombres
-
-#Yo
-@get('/dario')
-def dario():
-    with open('./uvatar_recortes.json') as fp:
-        
-        data = json.load(fp)
-        dario["ojos"]=data['eyes']['dario']
-    return dario
-
-@post('/dario')
-def muestraDario():
-    print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
-    return request.body
 
 @get('/ojos')
 def mostrarOjos():
