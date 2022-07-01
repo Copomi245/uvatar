@@ -62,7 +62,7 @@ h1{
 }
 .accesorio_ubicacion{
     top: -30px;
-    left: 170px;
+    left: 220px;
     margin-top: 10;
     width: 580px;
     position: absolute;
@@ -89,6 +89,15 @@ h1{
 .accesorios{
     height: 200px;
     border: 1px solid #000;
+}
+
+.nuevos_recortes{
+    
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    
 }
 .opciones{
     border-radius: 10px; 
