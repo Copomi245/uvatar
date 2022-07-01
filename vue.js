@@ -1,4 +1,4 @@
-//JavaScript que no tengo muy claro que hace
+
 //El vue
 const app = new Vue({
     el: '#app',
@@ -16,14 +16,10 @@ const app = new Vue({
         orejasI:[],
         orejasD:[],
         accesorios:[]
-     
 
     },
     created(){
 
-
-
-        
         fetch('http://localhost:8080/ojos')
         .then(response => response.json())
         .then(json => {
@@ -59,16 +55,10 @@ const app = new Vue({
         .then(json => {
             this.accesorios = json.Accesorios
         })
-
-
-        
-
-
                 
     }, 
     methods:{
-        
-        
+              
         cambiarOjos(ojo){
             this.ojos_actual = []
             this.ojos_actual.push(ojo)
@@ -78,23 +68,25 @@ const app = new Vue({
             this.boca_actual = []
             this.boca_actual.push(boca)
         },
+
         cambiarOrejaI(oreja){
             this.orejaI_actual = []
             this.orejaI_actual.push(oreja)
         },
+
         cambiarOrejaD(oreja){
             this.orejaD_actual = []
             this.orejaD_actual.push(oreja)
         },
+
         cambiarNariz(nariz){
             this.nariz_actual = []
             this.nariz_actual.push(nariz)
         },
+
         equiparAccesorio(accesorio){
             this.accesorio_cabeza = []
             this.accesorio_cabeza.push(accesorio)
-
-
         },
 
         random(){
@@ -110,7 +102,6 @@ const app = new Vue({
             this.nariz_actual=this.narices[Math.floor(Math.random() * this.narices.length)]
             this.accesorio_cabeza = []
             this.accesorio_cabeza=this.accesorios[Math.floor(Math.random() * this.accesorios.length)]
-
         }
         
     }
