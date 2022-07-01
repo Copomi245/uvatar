@@ -1,9 +1,9 @@
 # uvatar
 <html>
   <head>
-    prueba
+    Uvatar
   </head>
   <body>
-    hola que tal
+    Repositorio de la web que hemos creado
   </body>
 </html>
