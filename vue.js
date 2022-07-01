@@ -9,7 +9,7 @@ const app = new Vue({
         orejaI_actual:[],
         orejaD_actual:[],
         boca_actual:[],
-        accesorio_cabeza[],
+        accesorio_cabeza:[],
         ojos:[],
         bocas:[],
         narices:[],
