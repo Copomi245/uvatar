@@ -110,22 +110,6 @@ const app = new Vue({
             this.accesorio_cabeza = []
             this.accesorio_cabeza=this.accesorios[Math.floor(Math.random() * this.accesorios.length)]
 
-        },
-
-        UvaRandom(){
-            var i=Math.floor(Math.random() * this.ojos.length)
-            this.ojos_actual = []
-            this.ojos_actual=this.ojos[i]
-            this.boca_actual = []
-            this.boca_actual=this.bocas[i]
-            this.orejaI_actual = []
-            this.orejaI_actual=this.orejasI[i]
-            this.orejaD_actual = []
-            this.orejaD_actual=this.orejasD[i]
-            this.nariz_actual = []
-            this.nariz_actual=this.narices[i]
-            this.accesorio_cabeza = []
-            
         }
         
     }
