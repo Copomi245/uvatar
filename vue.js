@@ -9,17 +9,13 @@ const app = new Vue({
         orejaI_actual:[],
         orejaD_actual:[],
         boca_actual:[],
-        accesorio_cabeza:[],
-        accesorio_facial:[],
         pelo:[],
-        cara:"carne con salsa",
         ojos:[],
         bocas:[],
         narices:[],
         orejasI:[],
         orejasD:[],
-        accesorios:[],
-        variable:[],
+        accesorios:[]
 
     },
     created(){
@@ -70,14 +66,7 @@ const app = new Vue({
                 
     }, 
     methods:{
-        uvatarAleatorio(){
- 
-            this.orejaD_actual.push(orejasD[Math.floor(Math.random()*orejasD.length)])
-            this.orejaI_actual.push(orejasI[Math.floor(Math.random()*orejasI.length)])
-            this.boca_actual.push(bocas[Math.floor(Math.random()*bocas.length)])
-            this.nariz_actual.push(narices[Math.floor(Math.random()*narices.length)])
-            this.ojos_actual.push(ojos[Math.floor(Math.random()*ojos.length)])
-        },
+        
         
         cambiarOjos(ojo){
             this.ojos_actual = []
