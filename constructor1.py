@@ -17,10 +17,12 @@ def mostrarOjos():
             ojos["Ojos"].append(data["url"])
     
     return ojos 
-   
+ 
+    
 @post('/ojos')
 def postOjos():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
 
 
@@ -35,10 +37,13 @@ def mostrarBocas():
     
     return bocas 
    
+    
 @post('/bocas')
 def postBocas():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
+
 
 @get('/narices')
 def mostrarNarices():
@@ -51,9 +56,11 @@ def mostrarNarices():
     
     return narices 
    
+    
 @post('/narices')
 def postNarices():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
 
 
@@ -66,13 +73,15 @@ def mostrarOrejasI():
             data = json.load(f)
             orejas["Orejas"].append(data["urlI"])
 
-    
     return orejas 
    
+    
 @post('/orejasI')
 def postOrejasI():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
+
 
 @get('/orejasD')
 def mostrarOrejasD():
@@ -83,13 +92,15 @@ def mostrarOrejasD():
             data = json.load(f)
             orejas["Orejas"].append(data["urlD"])
 
-    
     return orejas 
    
+    
 @post('/orejasD')
 def postOrejasD():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
+
 
 @get('/accesorios')
 def mostrarAccesorios():
@@ -99,18 +110,18 @@ def mostrarAccesorios():
         with open(file) as f:
             data = json.load(f)
             accesorios["Accesorios"].append(data["url"])
-
-    
+ 
     return accesorios 
-   
+  
+    
 @post('/accesorios')
 def postAccesorios():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
 
 @get('/accesorios2')
 def devolverAccesorio():
-
     accesorios = {"Accesorios" : []}
     files = glob.glob("./recortes/accesorios/*.json")
     print(files)
@@ -118,15 +129,18 @@ def devolverAccesorio():
         with open(file) as f:
             accesorio = json.load(f)
             accesorios["Accesorios"].append(accesorio)
+    
     return accesorios
+
 
 @post('/accesorios2')
 def posteaDevuelveAccesorio():
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
+    
     return request.body
 
 
-print("chorizo")
+
 
 ################################################
 
